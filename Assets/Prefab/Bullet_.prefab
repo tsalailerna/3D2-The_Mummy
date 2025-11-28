@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2242576665941131292}
   - component: {fileID: 1487967524213743444}
   - component: {fileID: 15459086538070863}
-  - component: {fileID: 3977691247059016144}
-  - component: {fileID: 8681878513078922209}
+  - component: {fileID: 5061681113461303807}
+  - component: {fileID: 7126259919446779432}
   m_Layer: 0
   m_Name: Bullet_
   m_TagString: bullet
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6407471398624934028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -88,7 +88,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3977691247059016144
+--- !u!135 &5061681113461303807
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +109,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &8681878513078922209
+--- !u!54 &7126259919446779432
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

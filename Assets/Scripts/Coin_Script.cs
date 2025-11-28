@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Script_Coin : MonoBehaviour
+public class Coin_Script : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -11,7 +11,8 @@ public class Script_Coin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0,0,0.3f);
-        
+                transform.Rotate(0,0,0.3f);
+
     }
 }
+

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Script_Enemigos : MonoBehaviour
+public class Enemy_Script : MonoBehaviour
 {
 
     public int vides;
