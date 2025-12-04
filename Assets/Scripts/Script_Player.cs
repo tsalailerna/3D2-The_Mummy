@@ -80,6 +80,7 @@ public class Script_Player : MonoBehaviour
 
 
         if(Input.GetButtonDown("Fire1") && max_ammo > 0){
+            Cursor.lockState = CursorLockMode.Locked;
             max_ammo = max_ammo -1;
             
             Debug.Log("Disparo");

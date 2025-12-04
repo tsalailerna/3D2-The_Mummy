@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+    
 
 public class Enemy_Random_Move_Script : MonoBehaviour
 {
@@ -46,8 +48,8 @@ public class Enemy_Random_Move_Script : MonoBehaviour
         if(me_mira == false){
             time_rot += Time.deltaTime;
 
-            if(time_rot >= 2){
-                transform.Rotate(0,Random.Range(45,135),0);
+            if(time_rot >= 5){
+                StartCoroutine(nameof(GirEnemicProgre));
                 time_rot=0;
         }
 
@@ -59,6 +61,18 @@ public class Enemy_Random_Move_Script : MonoBehaviour
 
 
     }
+
+        public IEnumerator GirEnemicProgre(){
+            int rot_random = Random.Range(45,135);
+
+            while(rot_random > 0){
+                transform.Rotate(0,1,0);
+                rot_random--;
+                yield return new WaitForSeconds(0.01f);
+            }
+            
+        }
+
 
     void OnCollisionEnter(Collision col){
 
