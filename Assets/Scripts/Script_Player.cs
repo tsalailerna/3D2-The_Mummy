@@ -137,10 +137,6 @@ public class Script_Player : MonoBehaviour
         if(other.gameObject.tag == "money"){
             points++;
 
-            other.gameObject.GetComponent<AudioSource>().Play();
-            other.gameObject.GetComponent<MeshRenderer>().enabled = false;
-            Destroy(other.gameObject,2);
-
         }
 
     }
